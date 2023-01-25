@@ -1,14 +1,5 @@
-#region documentation
-#endregion
-
-#region scriptheader
 #requires -version 5.0
 
-using module ..\..\CustomOutput\CustomOutput.psm1
-Import-Module ($(Get-Item $PSScriptRoot).Parent.FullName + "\ConfigurationManager\ConfigurationManager.psm1")
-#endregion
-
-#region code
 class GitTools {
     [string] $UserName
     [SecureString] $Password
@@ -153,4 +144,3 @@ class GitTools {
         return ($address -as [System.URI]).AbsoluteURI -ne $null
     }
 }
-#endregion
