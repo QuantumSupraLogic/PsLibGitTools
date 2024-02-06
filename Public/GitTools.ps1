@@ -1,5 +1,7 @@
 #requires -version 5.0
 
+Set-StrictMode -Version 3.0
+
 class GitTools {
     [string] $UserName
     [SecureString] $Password
